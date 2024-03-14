@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="IMAGES/logo.png" class="logo">
+                <ul>
+                   <li><a href="#header">Home</a></li> 
+                   <li><a href="#about">About</a></li> 
+                   <li><a href="#services">Services</a></li> 
+                   <li><a href="#portfolio">Portfolio</a></li> 
+                   <li><a href="#contact">Contact</a></li> 
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Akshay Reddy <br>Kolipaka</span></h1>
+            </div>
+        </div>
+    </div>
+<div id="about">
+
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="IMAGES/user.jpg" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>add text</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+
+
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Java</span></li>
+                        <li><span>python</span></li>
+                        <li><span>SAP Hybris Development</span></li>
+                        <li><span>SQL</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Dec 2020- July 2022</span><br>Application Development Associate at Accenture solutions Hyderabad, India</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Aug 2022 – May 2024</span><br>Master of Science in Computer Science from University of Missouri,Kansas City 
+                        </li>
+                        <li><span>Aug 2016 – May 2020</span><br>Bachelor of Technology in Electronics, communication Engineering  from Sreenidhi Institute of Science and Technology Hyderabad, India
+                        </li>
+                        
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div> 
+
+<!--services-->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <h2>Web Design</h2>
+                <p>description</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>App Design</h2>
+                <p>description</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---portfolio-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="IMAGES/work-1.png" >
+                <div class="layer">
+                    <h3>Placement Information Portal</h3>
+                    <p>Technologies used-Angular,HTML,CSS,Bootstrap,TypeScript,
+                        JavaScript,MongoDB,NodeJS,Express’s,
+                        RESTAPI.
+
+                        Developed an all-inclusive website offering in-depth insights into company recruitment procedures, skill
+                        prerequisites, and real interview experiences, empowering students to make informed career decisions. Designed an intuitive interface allowing students to efficiently filter and compare companies based on their
+                        preferences. Website fostering an environment of peer support and knowledge sharing, resulting in a valuable resource for career
+                        seekers.</p>
+                        <a href="#"></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="IMAGES/work-2.png" >
+                <div class="layer">
+                <h3>Gadget Garage</h3>
+                    <p>Technologies used-JavaScript, PHP, SQL
+                        Developed the User Interface using HTML, PHP, CSS, and AJAX. Stored and accessed the data using SQL Database using Php as a backend scripting Language. Managed and worked with the team efficiently to complete the project in the stipulated time.</p>
+                        <a href="#"></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="IMAGES/work-3.png" >
+                <div class="layer">
+                <h3> Music Recommendation System Based on Facial Expression </h3>
+                    <p>Developed a Music Recommendation System using facial expression analysis, this project uses CNN and ResNet50V2 to detect emotions with an accuracy of 65.14%-67.23%. It recommends songs based on the user's mood, using Kaggle datasets for emotion recognition and music preferences, thereby enhancing the music experience by aligning suggestions with the user's emotional state. </p>
+                        <a href="#"></a>
+                </div>        
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!---contanct information-->
+
+<div id="contact">
+    <div class="conainer">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>kolipakaakshay219@gmail.com</p>
+                <p>+1 816-577-0747</p>
+                <div class="social-icons">
+                    <a href=""></a>
+                </div>
+                <a href="IMAGES/my-cv.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© UNTITLED. DESIGN</p>
+    </div>
+</div>
+
+
+<script>
+ var tablinks=document.getElementsByClassName("tab-links");
+ var tabcontents=document.getElementsByClassName("tab-contents");
+ function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+        
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+ }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbziXOplf1S-7HRNCeZ9-BdDuUP1tAkLnB0Drbi2gm9sKH9p9m0ioY632BhDZz0vDMlN/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg= document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = 'Meesage sent sucessfully'
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
